@@ -1,0 +1,302 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+  
+  /* Sabit Sol Menü (Sidebar) */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050;
+  }
+  .sidebar .sidebar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+  }
+  .sidebar .logo {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  .sidebar h5 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .sidebar ul.nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .sidebar ul.nav li {
+    margin-bottom: 5px;
+  }
+  .sidebar ul.nav li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  .sidebar ul.nav li a:hover,
+  .sidebar ul.nav li a:focus {
+    background-color: #495057;
+  }
+  
+  /* Ana İçerik Alanı */
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* İçerik Bölümleri */
+  .content-section {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Navbar */
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #343a40;
+  }
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  /* Dropdown Menü */
+  .dropdown-menu {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  .dropdown-item {
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+  }
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #f1f1f1;
+  }
+  
+  /* Form ve Butonlar */
+  .form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease;
+  }
+  .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: none;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #0069d9;
+  }
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+  }
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* VYNE Kurallar: Resimler alt alta, merkezlenmiş */
+  .rules-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .rules-container img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Tema Özelleştirici Switcher (Offcanvas) */
+  /* Switcher butonunun konumu sağ üstte sabit, metin dikey */
+  .btn-switcher {
+    z-index: 1100;
+    writing-mode: vertical-lr;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Responsive Ayarlar */
+  @media (max-width: 992px) {
+    .sidebar {
+      transform: translateX(-100%);
+    }
+    .sidebar.active {
+      transform: translateX(0);
+    }
+    .main-content {
+      margin-left: 0;
+    }
+  }
+
+.color{
+  background: #252525;
+  color: white;
+}
+
+/* Whitelist Başvuru ve Yetkili Şikayet Formları */
+.content-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.content-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.25);
+}
+
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.25);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.invalid-feedback {
+  color: #dc3545;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 15px;
+  }
+
+  .form-control, .form-select {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
