@@ -1,0 +1,60 @@
+.top-header {
+  display: flex;
+  align-items: center;
+  background-color: #0c112c !important;
+  height: 70px;
+  position: fixed;
+  border-bottom: 0px solid var(--bs-border-color);
+  left: 0px;
+  right: 0;
+  top: 0;
+  padding: 0 0rem;
+  z-index: 11;
+  transition: ease-out 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.top-header .navbar .logo-header .logo-name h5 {
+  color: #ffffff !important;
+}
+
+.top-header .btn-toggle a {
+  color: #ffffff !important;
+}
+
+.top-header .nav-right-links .nav-link {
+  color: #ffffff !important;
+}
+
+.top-header .btn-grd-primary {
+  background: linear-gradient(45deg, #0c112c, #070b1e);
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.offcanvas-header {
+  background-color: #0c112c;
+  color: #ffffff;
+}
+
+.primary-menu .nav-link {
+  color: #000000 !important;
+}
+
+.primary-menu .nav-link:hover {
+  background-color: rgba(12, 17, 44, 0.1);
+}
+
+.primary-menu .menu-title {
+  color: #000000 !important;
+}
+
+.primary-menu .parent-icon i {
+  color: #000000 !important;
+}
+
+.top-header .material-icons-outlined {
+  color: #ffffff !important;
+} 
